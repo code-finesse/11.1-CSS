@@ -1,38 +1,28 @@
 # What is CSS?
 
-- It stands for Cascading Style Sheets and is responsible for styling the web
-- HTML → structure CSS→ layout, look
-- syntax is formatted like this: selector{property:value;property:value}
-- saved as .css file and is linked to html file
+- Cascading Style Sheets
+- Responsible for styling the web
+- HTML → structure | CSS → layout/style
+- Syntax: selector{property:value;property:value}
 
 ```html
-<link rel="stylesheet" href="(name of file)" />
+<link rel="stylesheet" href="style.css" />
 ```
 
-- inline styling is > internal styling > external styling
-- elements are referred to as CSS Rule
+- hierarchy of importance: inline styling > internal styling > external styling
 
-  - CSS Rule is made up of selectors, declaration blocks, declaration as property, and values
-  - eg. heading type > property > value
-  - semicolon is important
+  - CSS Rule is made up of selectors, declaration blocks, declaration as property and value
 
-  ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a35b6c3-268d-4f18-9f2d-3e88a62e01b8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a35b6c3-268d-4f18-9f2d-3e88a62e01b8/Untitled.png)
-
-- element selectors are used to style entire elements (h1 {....})
-- id's can be used to select certain objects (#title {....}) and should be unique
-- classes can be used to be more specific(.class {...})
-- id's and classes can be combined
-- div is block level element and span is inline element
+- Specificity explains priority of styling
+- element selectors are used to style all elements on the page h1 {....}
+- classes can be used to select a specific group of elements .class {...}
+- id's can be used to select specific objects (should be unique) #title {....}
+- universal Selector * {...} selects all of the elements with the least amount of specificity
 - inheritance implies styling added from other elements, even if not specifically dictated to them
   - only same properties will be overwritten
-  - not all properties will be inherited
-- Last Rule dictates that the last stated property will be the one applied if same property is
-- Specificity explains priority of styling
-- Universal Selector (\* {...}) selects all of the elements with the least amount of specificity
-- CTRL + SPACE = show suggestions
+- Last Rule dictates that the last stated property will be the one applied if same property
 - Browser Prefixes (-webkit/-moz/etc.) help certain browsers understand latest versions of css
   - [caniuse.com](http://caniuse.com) will tell which versions of webapps support certain syntaxes
-  - autoprefixer can also help
 
 # Past the Basics
 
